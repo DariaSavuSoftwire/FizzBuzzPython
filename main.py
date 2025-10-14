@@ -6,9 +6,7 @@ def fizzBuzz():
             result+="Fizz"
         if number%3==0:
             result+="Buzz"
-        if result=="":
-            result=number
-        print(result)
+        print(number if result=='' else result)
 
 if __name__ == '__main__':
     fizzBuzz()
