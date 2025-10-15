@@ -1,12 +1,7 @@
 
 def fizzBuzz():
-    for number in range(1,100):
-        result=''
-        if number%5==0:
-            result+="Fizz"
-        if number%3==0:
-            result+="Buzz"
-        print(number if result=='' else result)
+    results=list(map(lambda number:int(number%5==0)*'Fizz'+int(number%3==0)*'Buzz' or number,range(1,101)))
+    print(results)
 
 if __name__ == '__main__':
     fizzBuzz()
